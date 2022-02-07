@@ -147,7 +147,7 @@ function App() {
       </div>
 
       <div className="py-8 text-center">
-      {question}        
+      {question} {pre} ????? {post}
       </div>
 
       <Grid guesses={guesses} currentGuess={currentGuess} />
