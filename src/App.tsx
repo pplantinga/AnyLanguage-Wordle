@@ -8,7 +8,7 @@ import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { WIN_MESSAGES } from './constants/strings'
-import { isWordInWordList, isWinningWord, solution } from './lib/words'
+import { isWordInWordList, isWinningWord, solution, question, pre, post } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   loadGameStateFromLocalStorage,
@@ -145,6 +145,11 @@ function App() {
           onClick={() => setIsStatsModalOpen(true)}
         />
       </div>
+
+      <div className="py-8 text-center">
+      {question}        
+      </div>
+
       <Grid guesses={guesses} currentGuess={currentGuess} />
       <Keyboard
         onChar={onChar}
@@ -183,7 +188,7 @@ function App() {
 
       <Alert message="Not enough letters" isOpen={isNotEnoughLetters} />
       <Alert message="Word not found" isOpen={isWordNotFoundAlertOpen} />
-      <Alert message={`The word was ${solution}`} isOpen={isGameLost} />
+      <Alert message={`The answer was ${pre} ${solution} ${post}`} isOpen={isGameLost} />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}

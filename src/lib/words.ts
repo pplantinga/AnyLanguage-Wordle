@@ -1,4 +1,4 @@
-import { WORDS } from '../constants/wordlist'
+import { JOKES, WORDS } from '../constants/wordlist'
 import { VALIDGUESSES } from '../constants/validGuesses'
 
 export const isWordInWordList = (word: string) => {
@@ -9,19 +9,28 @@ export const isWinningWord = (word: string) => {
   return solution === word
 }
 
-export const getWordOfDay = () => {
-  // February 6, 2022 Game Epoch
-  const epochMs = new Date('February 6, 2022 00:00:00').valueOf()
-  const now = Date.now()
-  const msInDay = 86400000
-  const index = Math.floor((now - epochMs) / msInDay)
-  const nextday = (index + 1) * msInDay + epochMs
+export const getJokeOfDay = () => {
+  return JOKES[index % JOKES.length]
+}
+
+export const getJokeOfDay = () => {
+// February 6, 2022 Game Epoch
+const epochMs = new Date('February 6, 2022 00:00:00').valueOf()
+const now = Date.now()
+const msInDay = 86400000
+const index = Math.floor((now - epochMs) / msInDay)
+const nextday = (index + 1) * msInDay + epochMs
+const joke = JOKES[index % JOKES.length]
 
   return {
-    solution: WORDS[index % WORDS.length],
+    solution: joke.solution,
+    question: joke.question,
+    pre: joke.pre,
+    post: joke.post,
     solutionIndex: index,
     tomorrow: nextday,
   }
+  
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, question, pre, post, solutionIndex, tomorrow } = getJokeOfDay()
