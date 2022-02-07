@@ -41,7 +41,7 @@ function App() {
     if (gameWasWon) {
       setIsGameWon(true)
     }
-    if (loaded.guesses.length === 6 && !gameWasWon) {
+    if (loaded.guesses.length === 4 && !gameWasWon) {
       setIsGameLost(true)
     }
     return loaded.guesses

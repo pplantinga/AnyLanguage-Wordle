@@ -4,7 +4,7 @@ import {
   saveStatsToLocalStorage,
 } from './localStorage'
 
-// In stats array elements 0-5 are successes in 1-6 tries
+// In stats array elements 0-3 are successes in 1-4 tries
 
 export const addStatsForCompletedGame = (
   gameStats: GameStats,
@@ -15,7 +15,7 @@ export const addStatsForCompletedGame = (
 
   stats.totalGames += 1
 
-  if (count > 5) {
+  if (count > 3) {
     // A fail situation
     stats.currentStreak = 0
     stats.gamesFailed += 1
@@ -35,7 +35,7 @@ export const addStatsForCompletedGame = (
 }
 
 const defaultStats: GameStats = {
-  winDistribution: [0, 0, 0, 0, 0, 0],
+  winDistribution: [0, 0, 0, 0],
   gamesFailed: 0,
   currentStreak: 0,
   bestStreak: 0,
