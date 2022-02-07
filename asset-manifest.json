@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/AnyLanguage-Wordle/static/css/main.43cf4c82.css",
-    "main.js": "/AnyLanguage-Wordle/static/js/main.f6c8c6a3.js",
-    "static/js/787.3500bfec.chunk.js": "/AnyLanguage-Wordle/static/js/787.3500bfec.chunk.js",
-    "static/media/BCSans-Bold.woff": "/AnyLanguage-Wordle/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
-    "static/media/BCSans-BoldItalic.woff": "/AnyLanguage-Wordle/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
-    "static/media/BCSans-Italic.woff": "/AnyLanguage-Wordle/static/media/BCSans-Italic.9c3be03a06d30a6ecff0.woff",
-    "static/media/BCSans-Regular.woff": "/AnyLanguage-Wordle/static/media/BCSans-Regular.0079ea8e42d4e81a13d2.woff",
-    "index.html": "/AnyLanguage-Wordle/index.html",
-    "main.43cf4c82.css.map": "/AnyLanguage-Wordle/static/css/main.43cf4c82.css.map",
-    "main.f6c8c6a3.js.map": "/AnyLanguage-Wordle/static/js/main.f6c8c6a3.js.map",
-    "787.3500bfec.chunk.js.map": "/AnyLanguage-Wordle/static/js/787.3500bfec.chunk.js.map"
+    "main.css": "/chortle/static/css/main.a11a03fd.css",
+    "main.js": "/chortle/static/js/main.91e501bb.js",
+    "static/js/787.1e0aea5f.chunk.js": "/chortle/static/js/787.1e0aea5f.chunk.js",
+    "static/media/BCSans-Bold.woff": "/chortle/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff",
+    "static/media/BCSans-BoldItalic.woff": "/chortle/static/media/BCSans-BoldItalic.73ed5137b2c4a42b754f.woff",
+    "static/media/BCSans-Italic.woff": "/chortle/static/media/BCSans-Italic.9c3be03a06d30a6ecff0.woff",
+    "static/media/BCSans-Regular.woff": "/chortle/static/media/BCSans-Regular.0079ea8e42d4e81a13d2.woff",
+    "index.html": "/chortle/index.html",
+    "main.a11a03fd.css.map": "/chortle/static/css/main.a11a03fd.css.map",
+    "main.91e501bb.js.map": "/chortle/static/js/main.91e501bb.js.map",
+    "787.1e0aea5f.chunk.js.map": "/chortle/static/js/787.1e0aea5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43cf4c82.css",
-    "static/js/main.f6c8c6a3.js"
+    "static/css/main.a11a03fd.css",
+    "static/js/main.91e501bb.js"
   ]
 }
