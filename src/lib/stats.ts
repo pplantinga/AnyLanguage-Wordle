@@ -4,7 +4,7 @@ import {
   saveStatsToLocalStorage,
 } from './localStorage'
 
-// In stats array elements 0-5 are successes in 1-6 trys
+// In stats array elements 0-5 are successes in 1-6 tries
 
 export const addStatsForCompletedGame = (
   gameStats: GameStats,
