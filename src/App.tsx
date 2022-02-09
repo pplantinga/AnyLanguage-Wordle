@@ -8,7 +8,14 @@ import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { WIN_MESSAGES } from './constants/strings'
-import { isWordInWordList, isWinningWord, solution, question, pre, post } from './lib/words'
+import {
+  isWordInWordList,
+  isWinningWord,
+  solution,
+  question,
+  pre,
+  post,
+} from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
   loadGameStateFromLocalStorage,
@@ -133,9 +140,7 @@ function App() {
   return (
     <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div className="flex w-80 mx-auto items-center mb-8">
-        <h1 className="text-xl grow font-bold">
-          {CONFIG.language}
-        </h1>
+        <h1 className="text-xl grow font-bold">{CONFIG.language}</h1>
         <InformationCircleIcon
           className="h-6 w-6 cursor-pointer"
           onClick={() => setIsInfoModalOpen(true)}
@@ -146,11 +151,14 @@ function App() {
         />
       </div>
 
-      <div className="py-8 text-center">
-      {question} {pre} ????? {post}
-      </div>
+      <div className="py-8 text-center">{question}</div>
 
       <Grid guesses={guesses} currentGuess={currentGuess} />
+
+      <div className="text-center">
+        {pre} ????? {post}
+      </div>
+
       <Keyboard
         onChar={onChar}
         onDelete={onDelete}
@@ -173,6 +181,7 @@ function App() {
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
       />
+
       <AboutModal
         isOpen={isAboutModalOpen}
         handleClose={() => setIsAboutModalOpen(false)}
@@ -188,7 +197,10 @@ function App() {
 
       <Alert message="Not enough letters" isOpen={isNotEnoughLetters} />
       <Alert message="Word not found" isOpen={isWordNotFoundAlertOpen} />
-      <Alert message={`The answer was ${pre} ${solution} ${post}`} isOpen={isGameLost} />
+      <Alert
+        message={`The answer was ${pre} ${solution} ${post}`}
+        isOpen={isGameLost}
+      />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}
