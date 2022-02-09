@@ -3,7 +3,7 @@ import { CONFIG } from './config'
 export const JOKES = [
   {solution: 'CORNY', question:'What do you call a farm that makes bad jokes?', pre:'', post:''},
   {solution: 'STICK', question:'What’s brown and sticky?', pre:'A', post:''},
-  {solution: 'GUMMY', question:'What is a little bear with no teeth is called?', pre:'A', post:'bear'},
+  {solution: 'GUMMY', question:'What is a little bear with no teeth called?', pre:'A', post:'bear'},
   {solution: 'NEIGH', question:'How did the horse vote?', pre:'', post:''},
   {solution: 'KITTY', question:'What did the winner get at the humane society poker fundraiser?', pre:'The', post:''},
   {solution: 'PAUSE', question:'How does a cat stop a Netflix show?', pre:'With', post:''},
@@ -21,7 +21,7 @@ export const JOKES = [
   {solution: 'EXCEL', question:'What’s the best you can hope to do in a Microsoft products course?', pre:'', post:''},
   {solution: 'ARRAY', question:'What do you call a bunch of neatly arranged light waves?', pre:'', post:''},
   {solution: 'FORTY', question:'Why have two score mugs?', pre:'', post:''},
-  {solution: 'MOUSE', question:'It’s a cats favorite part of a computer.', pre:'The', post:''},
+  {solution: 'MOUSE', question:'It’s a cat’s favorite part of a computer.', pre:'The', post:''},
   {solution: 'NOVEL', question:'How was the new book?', pre:'', post:''},
   {solution: 'URINE', question:'What do you tell someone who passes the peeing-based hazing ritual?', pre:'', post:''},
   {solution: 'SCENT', question:'What do you call a smelly penny?', pre:'', post:''},
