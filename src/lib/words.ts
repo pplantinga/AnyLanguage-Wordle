@@ -9,11 +9,7 @@ export const isWinningWord = (word: string) => {
   return solution === word
 }
 
-export const getJokeOfDay = () => {
-  return JOKES[index % JOKES.length]
-}
-
-export const getJokeOfDay = () => {
+export const getWordOfDay = () => {
 // February 6, 2022 Game Epoch
 const epochMs = new Date('February 6, 2022 00:00:00').valueOf()
 const now = Date.now()
@@ -33,4 +29,4 @@ const joke = JOKES[index % JOKES.length]
   
 }
 
-export const { solution, question, pre, post, solutionIndex, tomorrow } = getJokeOfDay()
+export const { solution, question, pre, post, solutionIndex, tomorrow } = getWordOfDay()

@@ -1,7 +1,7 @@
 {
-    "name": "wordle",
+    "name": "chortle",
     "version": "0.1.0",
-    "homepage": "https://roedoejet.github.io/AnyLanguage-Wordle",
+    "homepage": "https://massey-plantinga.com/chortle",
     "private": true,
     "dependencies": {
         "@bcgov/bc-sans": "^1.0.1",
