@@ -155,7 +155,7 @@ function App() {
 
       <Grid guesses={guesses} currentGuess={currentGuess} />
 
-      <div className="text-center">
+      <div className="text-center pb-8">
         {pre} ????? {post}
       </div>
 
