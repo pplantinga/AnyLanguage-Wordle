@@ -33,5 +33,5 @@ export const generateEmojiGrid = (guesses: string[][]) => {
         })
         .join('')
     })
-    .join('\n') + 'https://pplantinga.github.io/chortle'
+    .join('\n') + '\nhttps://pplantinga.github.io/chortle'
 }
